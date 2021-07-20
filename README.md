@@ -31,7 +31,7 @@ player:Update()
 
 -- Get image size
 local width = player:GetWidth()
-local height = player:
+local height = player:GetHeight()
 ```
 
  
