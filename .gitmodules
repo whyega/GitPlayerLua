@@ -1,9 +1,6 @@
 [submodule "sol2"]
 	path = sol2
 	url = https://github.com/ThePhD/sol2
-[submodule "gifplayer"]
-	path = gifplayer
-	url = https://gitlab.com/SR_team/gifplayer
 [submodule "SRSignal"]
 	path = SRSignal
 	url = https://gitlab.com/SR_team/SRSignal
