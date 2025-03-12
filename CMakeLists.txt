@@ -20,6 +20,9 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/llmo)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/sol2/include)
 
+link_directories(${CMAKE_CURRENT_SOURCE_DIR}/lua)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/lua)
+
 add_library(GifPlayerLua SHARED
   GifPlayerLua_global.h
   GifPlayerLua.cpp
@@ -29,7 +32,7 @@ add_library(GifPlayerLua SHARED
   DrawHook.h
 )
 
-target_link_libraries(GifPlayerLua  GifPlayer lua llmo)
+target_link_libraries(GifPlayerLua  GifPlayer lua51 llmo)
 
 target_compile_definitions(GifPlayerLua PRIVATE GIFPLAYERLUA_LIBRARY)
 
